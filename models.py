@@ -22,10 +22,6 @@ class Catalog:
         cls.__modify_catalog(catalog_data)
 
     @classmethod
-    def remove_catalog(cls):
-        pass
-
-    @classmethod
     def fetch_catalog(cls):
         with open(cls.CATALOG_FILM_PATH, 'r', encoding='utf-8') as jf:
             catalog_data = json.load(jf)
